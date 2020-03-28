@@ -1,6 +1,8 @@
 # NativeScript Build Release
 
-A NativeScript utility to simplify the _tns build --release_ command to quickly create an Android or iOS package. Currently available on MacOS and Linux.
+A NativeScript utility to simplify the *tns build --release* command to quickly create an Android or iOS package. Currently available on MacOS and Linux.
+
+> We perfectly know DEBUG or RUN, but not necessarily BUILD...
 
 ## Getting Started
 
@@ -13,7 +15,7 @@ A NativeScript utility to simplify the _tns build --release_ command to quickly 
 
 ### Installation
 
-Run the following command in Terminal to download the files from this directory.
+In Terminal, run the following command to download the files from this directory.
 
 ```shell
 git clone https://github.com/elvticc/nativescript-build-release
@@ -39,7 +41,7 @@ In the nsconfig.json file, you must add the **buildRelease** key. The buildRelea
   * keyStorePath
   * keyStoreAlias
   * copyPath
-  * options (_separated by commas_)
+  * options (*separated by commas*)
     * aot
     * snapshot
     * compileSnapshot
@@ -48,21 +50,21 @@ In the nsconfig.json file, you must add the **buildRelease** key. The buildRelea
     * sourceMap
     * hiddenSourceMap
     * force
-    * aab (_package extension_)
-    * 28 (_and higher_) or api28 or sdk28
+    * aab (*package extension*)
+    * 28 (*and higher*) or api28 or sdk28
 
 * ios ([more info](https://docs.nativescript.org/tooling/docs-cli/project/testing/build-ios))
   * teamId
   * provisionUuid
   * copyPath
-  * options (_separated by commas_)
+  * options (*separated by commas*)
     * aot
     * uglify
     * report
     * sourceMap
     * hiddenSourceMap
     * force
-    * app (_package extension_)
+    * app (*package extension*)
     * icloud or iCloud
 
 #### nsconfig.json example
@@ -91,7 +93,7 @@ In Terminal, navigate to your application root folder and run `ns_build` alias t
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/elvticc/sveltejs-preprocess-template/blob/master/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/elvticc/nativescript-build-release/blob/master/LICENSE) for more information.
 
 ## Contact
 
