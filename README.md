@@ -1,6 +1,6 @@
 # NativeScript Build Release
 
-A NativeScript utility to simplify the "tns build --release" command to quickly create an Android or iOS package. Currently available on MacOS and Linux.
+A NativeScript utility to simplify the _tns build --release_ command to quickly create an Android or iOS package. Currently available on MacOS and Linux.
 
 ## Getting Started
 
