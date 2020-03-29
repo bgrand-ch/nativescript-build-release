@@ -12,14 +12,15 @@
 ##
 show_header () {
 
-    echo "\n# # # # # # # # # # # # # # # # ## # # # # # # # # # # # # # # # # #"
-    echo "#                                                                  #"
-    echo "#                         NATIVESCRIPT CLI                         #"
-    echo "#                  SIMPLIFY THE TNS BUILD COMMAND                  #"
-    echo "#                                                                  #"
-    echo "#  \"We perfectly know DEBUG or RUN, but not necessarily BUILD...\"  #"
-    echo "#                                                                  #"
-    echo "# # # # # # # # # # # # # # # # ## # # # # # # # # # # # # # # # # #\n"
+echo '
+# # # # # # # # # # # # # # # # ## # # # # # # # # # # # # # # # # #
+#                                                                  #
+#                         NATIVESCRIPT CLI                         #
+#                  SIMPLIFY THE TNS BUILD COMMAND                  #
+#                                                                  #
+#  "We perfectly know DEBUG or RUN, but not necessarily BUILD..."  #
+#                                                                  #
+# # # # # # # # # # # # # # # # ## # # # # # # # # # # # # # # # # #\n'
 
 }
 
@@ -31,47 +32,48 @@ show_header () {
 ##
 show_informations () {
 
-    echo "This utility only uses the 'nsconfig.json' file."
-    echo "It is at the root of your NativeScript project, otherwise create it.\n"
+echo '
+The utility only uses the "nsconfig.json" file. It is at the root of your application folder, otherwise create it.
 
-    echo "-> See on https://docs.nativescript.org/core-concepts/project-structure-app#the-nsconfigjson-file\n"
+More info: https://docs.nativescript.org/core-concepts/project-structure-app#the-nsconfigjson-file
 
-    echo "In the 'nsconfig.json' file, you must add the 'buildRelease' key."
-    echo "The 'buildRelease' key can contain the following data:\n"
+In the "nsconfig.json" file, you must add the "buildRelease" key. The "buildRelease" key can contain the following data:
 
-    echo "    android"
-    echo "        keyStorePath"
-    echo "        keyStoreAlias"
-    echo "        copyPath"
-    echo "        options (separated by commas)"
-    echo "            aot"
-    echo "            snapshot"
-    echo "            compileSnapshot"
-    echo "            uglify"
-    echo "            report"
-    echo "            sourceMap"
-    echo "            hiddenSourceMap"
-    echo "            force"
-    echo "            aab (package extension)"
-    echo "            28 (and higher) or api28 or sdk28\n"
+    android
+        keyStorePath
+        keyStoreAlias
+        copyPath
+        options (separated by commas)
+            aot
+            snapshot
+            compileSnapshot
+            uglify
+            report
+            sourceMap
+            hiddenSourceMap
+            force
+            aab (package extension)
+            28 (and higher) or api28 or sdk28
 
-    echo "    -> See on https://docs.nativescript.org/tooling/docs-cli/project/testing/build-android\n"
+    More info: https://docs.nativescript.org/tooling/docs-cli/project/testing/build-android
 
-    echo "    ios"
-    echo "        teamId"
-    echo "        provisionUuid"
-    echo "        copyPath"
-    echo "        options (separated by commas)"
-    echo "            aot"
-    echo "            uglify"
-    echo "            report"
-    echo "            sourceMap"
-    echo "            hiddenSourceMap"
-    echo "            force"
-    echo "            app (package extension)"
-    echo "            icloud or iCloud\n"
+    ios
+        teamId
+        provisionUuid
+        copyPath
+        options (separated by commas)
+            aot
+            uglify
+            report
+            sourceMap
+            hiddenSourceMap
+            force
+            app (package extension)
+            icloud or iCloud
 
-    echo "    -> See on https://docs.nativescript.org/tooling/docs-cli/project/testing/build-ios"
+    More info: https://docs.nativescript.org/tooling/docs-cli/project/testing/build-ios
+
+Latest info on GitHub: https://github.com/elvticc/nativescript-build-release'
 
 }
 
@@ -109,7 +111,7 @@ show_menu () {
             ;;
 
             "More informations")
-                echo "\n-###-- ${menu_option} --###-\n"
+                echo "\n-###-- ${menu_option} --###-"
                 show_informations
                 echo "${menu_write_number}"
             ;;
