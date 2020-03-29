@@ -1,6 +1,6 @@
 # NativeScript Build Release
 
-A NativeScript utility to simplify the *tns build --release* command to quickly create an Android or iOS package. Currently available on MacOS and Linux.
+A NativeScript utility to simplify the *tns build --release* command to quickly create an Android or iOS package, using only *nsconfig.json* file. Currently available on MacOS and Linux.
 
 > We perfectly know DEBUG or RUN, but not necessarily BUILD...
 
@@ -33,9 +33,9 @@ alias ns_build="sh ~/_PATH_TO_UTILITY_/nativescript-build-release/main.sh"
 
 ### NSConfig file
 
-The utility only uses the **nsconfig.json** file. It is at the root of your NativeScript project, otherwise create it. ([more info](https://docs.nativescript.org/core-concepts/project-structure-app#the-nsconfigjson-file))
+The utility only uses the **nsconfig.json** file. It is at the root of your application folder, otherwise create it. ([more info](https://docs.nativescript.org/core-concepts/project-structure-app#the-nsconfigjson-file))
 
-In the nsconfig.json file, you must add the **buildRelease** key. The buildRelease key can contain the following data:
+In the *nsconfig.json* file, you must add the **buildRelease** key. The *buildRelease* key can contain the following data:
 
 * android ([more info](https://docs.nativescript.org/tooling/docs-cli/project/testing/build-android))
   * keyStorePath
@@ -73,21 +73,21 @@ In the nsconfig.json file, you must add the **buildRelease** key. The buildRelea
 {
     "buildRelease": {
         "android": {
-            "keyStorePath": "/Volumes/Projects/My NS App/android.keystore",
-            "keyStoreAlias": "my_ns_app",
-            "copyPath": "/Volumes/Projects/My NS App/App/_build/android",
+            "keyStorePath": "/_PATH_TO_APP_/_APP_NAME_/android.keystore",
+            "keyStoreAlias": "_APP_NAME_",
+            "copyPath": "/_PATH_TO_APP_/_APP_NAME_/App/_BUILD_FOLDER_NAME_",
             "options": "uglify, aab"
         },
         "ios": {
             "provisionUuid": "0a0a00aa-0aaa-0a00-aa00-00000a0a00a0",
-            "copyPath": "/Volumes/Projects/My NS App/App/_build/ios",
+            "copyPath": "/_PATH_TO_APP_/_APP_NAME_/App/_BUILD_FOLDER_NAME_",
             "options": "uglify"
         }
     }
 }
 ```
 
-### Start the utility
+### Start
 
 In Terminal, navigate to your application root folder and run `ns_build` alias to start the utility.
 
