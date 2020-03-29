@@ -1,6 +1,6 @@
 # NativeScript Build Release
 
-A NativeScript utility to simplify the *tns build --release* command to quickly create an Android or iOS package, using only *nsconfig.json* file. Currently available on MacOS and Linux.
+A NativeScript utility to simplify the *tns build --release* command to quickly create an Android or iOS package, using only the *nsconfig.json* file. Currently available on MacOS and Linux.
 
 > We perfectly know DEBUG or RUN, but not necessarily BUILD...
 
@@ -90,6 +90,8 @@ In the *nsconfig.json* file, you must add the **buildRelease** key. The *buildRe
 ### Start
 
 In Terminal, navigate to your application root folder and run `ns_build` alias to start the utility.
+
+![Screenshot of NativeScript Build Release utility](https://repository-images.githubusercontent.com/250853911/c6d19300-71ee-11ea-98d1-ffc115b5397d)
 
 ## License
 
