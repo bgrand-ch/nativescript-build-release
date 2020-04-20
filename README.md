@@ -4,6 +4,8 @@ A NativeScript utility to simplify the *tns build --release* command to quickly 
 
 > We perfectly know DEBUG or RUN, but not necessarily BUILD...
 
+**Note:** Work in progress to become a new functionality of NativeScript CLI. See the progression with the pull request [#5296](https://github.com/NativeScript/nativescript-cli/pull/5296).
+
 ## Getting Started
 
 ### Prerequisites
